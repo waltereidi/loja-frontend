@@ -1,9 +1,19 @@
+<script lang="ts">
+  export default { 
+    methods : {
+      testStore(){
+        console.log(this.$store.getters.getAuthorization);
+      }
+    }
+  }
+</script>
 <template>
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </nav>
   <router-view/>
+<button @click="testStore">TestStore</button>
 </template>
 
 <style lang="scss">
