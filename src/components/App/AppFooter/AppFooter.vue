@@ -5,31 +5,48 @@
 </script>
 <template>
     <div class="footer">
-        <div class="footer--list-spacearound">
-                <ul><p>Institucional</p>
-                <li>sdsds</li>
+        <div class="footer--list-spacebetween">
+                <ul>Institucional
+                <li><router-link to="/">Home</router-link> </li>
+                <li><router-link to="/">Home</router-link> </li>
             </ul>  
             <ul>Serviços
-                <li>sdsds</li>
+                <li><router-link to="/">Home</router-link> </li>
+                <li><router-link to="/">Home</router-link> </li>
             </ul> 
             <ul>Contato
-                <li>sdsds</li>
+                <li><router-link to="/">Home</router-link> </li>
+                <li><router-link to="/">Home</router-link> </li>
+                <li><router-link to="/">Home</router-link> </li>
+                <li><router-link to="/">Home</router-link> </li>
             </ul> 
             <ul>Siga-nos
-                <li>sdsds</li>
+                <li><router-link to="/">Home</router-link> </li>
             </ul>   
             
         </div>
-        <div class="footer--list-centralized">
-            <ul>sdsds
-                <li>sdsds</li>
+        <div class="footer--list-flexstart">
+            <span>
+            <p>Formas de pagamento</p>
+            <ul>
+                <li><img src="/img/CreditCard/mastercard-6.svg" /></li>
+                <li><img src="/img/CreditCard/cielo-1.svg" /></li>
+                <li><img src="/img/CreditCard/visa-2.svg" /></li>
             </ul>
+            </span>
+            
         </div>
         <div class="footer--line-centralized">
             <p>Linha adicional de informações</p>
         </div>
         <div class="footer--bottom-centralized">
-            <p>Conjunto total de informações legais e acessibilidade...</p>
+            <p>Conjunto total de informações legais e acessibilidade...
+                <br>
+                <br>
+                <br>
+                <br>
+
+            </p>
 
         </div>
     </div>
