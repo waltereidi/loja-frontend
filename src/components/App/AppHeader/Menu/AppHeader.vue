@@ -1,4 +1,6 @@
 <script lang="ts">
+import CategoriasHeader from '../Categorias/CategoriasHeader.vue';
+
 const props = {
     datasource :{
         required : true , 
@@ -11,13 +13,15 @@ const methods = {
 }
 export default{
     props  , 
-    methods
+    methods, 
+    components:{
+        CategoriasHeader,
+    }
 }
 
 </script>
 
 <template>
-    <h1>sdsd</h1>
-    {{ datasource }}
+    <CategoriasHeader :datasource="datasource" ></CategoriasHeader>
     
 </template>

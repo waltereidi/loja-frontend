@@ -1,0 +1,54 @@
+.flex-column{
+    flex: 0 0 auto ; 
+    display: flex; 
+    flex-flow: row wrap ;
+    border:1px solid black; 
+    text-align: center;
+    align-content: center;
+    i{
+        flex: 0 0 20%;
+    }
+    p{
+        flex: 0 0 70%;
+    }
+    span{
+        flex: 0 0 10%;
+    }
+}
+.hide{
+    display:none; 
+}
+.menu{
+    position: fixed ; 
+    border : 1px solid black ; 
+    display: flex ; 
+    flex-flow : column ; 
+    height: 100vh;
+    min-width: 400px;
+
+    background-color: white;    
+    .logged>&--login{
+        height: none;
+    }
+    &--login{
+        height: 4em;
+    }
+    .main > &--information{
+        height: 4em;
+        
+    }
+    .main &--main-menu{
+        height: 3em;
+        display:none ;  
+    }
+    &--return{
+        display : none ; 
+    }
+    .sub-category &--return{
+        height: 3em;    
+    }
+
+    &--category {
+        height: 3em;
+    }
+}
