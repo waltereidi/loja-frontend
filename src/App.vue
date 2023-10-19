@@ -9,7 +9,7 @@ import AppHeader from "./components/App/AppHeader/Menu/AppHeader.vue";
   export default { 
     data(){
       return {
-        categoriasHeaderDataSource : require("../public/json/categoriasHeader.json") ,
+        categoriasHeaderDataSource : require("/tests/json/categoriasHeader.json") ,
       }
     },
     methods : {

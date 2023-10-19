@@ -2,7 +2,6 @@
     flex: 0 0 auto ; 
     display: flex; 
     flex-flow: row wrap ;
-    border:1px solid black; 
     text-align: center;
     align-content: center;
     i{
@@ -20,14 +19,13 @@
 }
 .menu{
     position: fixed ; 
-    border : 1px solid black ; 
     display: flex ; 
     flex-flow : column ; 
     height: 100vh;
     min-width: 400px;
 
     background-color: white;    
-    .logged>&--login{
+    .logged > &--login{
         height: none;
     }
     &--login{
@@ -35,11 +33,13 @@
     }
     .main > &--information{
         height: 4em;
-        
     }
     .main &--main-menu{
-        height: 3em;
         display:none ;  
+    }
+    &--main-menu{
+        height: 4em;
+        color:red;
     }
     &--return{
         display : none ; 
@@ -47,7 +47,6 @@
     .sub-category &--return{
         height: 3em;    
     }
-
     &--category {
         height: 3em;
     }
