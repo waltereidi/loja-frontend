@@ -22,6 +22,7 @@ export default{
 </script>
 
 <template>
-    <CategoriasHeader :datasource="datasource" ></CategoriasHeader>
+    <CategoriasHeader :datasource="datasource" v-if="this.$store.getNavMenu"></CategoriasHeader>
     
+
 </template>

@@ -22,10 +22,6 @@ import AppHeader from "./components/App/AppHeader/Menu/AppHeader.vue";
 </script>
 <template>
   <AppHeader :datasource="categoriasHeaderDataSource"> </AppHeader>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
   <router-view/>
 <AppFooter></AppFooter>
 </template>

@@ -25,29 +25,29 @@
     min-width: 400px;
 
     background-color: white;    
-    .logged > &--login{
-        height: none;
-    }
+   
     &--login{
+        cursor: pointer;
         height: 4em;
     }
-    .main > &--information{
+    &--information{
+        cursor: pointer;
         height: 4em;
     }
-    .main &--main-menu{
-        display:none ;  
-    }
+  
     &--main-menu{
+        cursor: pointer;
         height: 4em;
         color:red;
     }
+
     &--return{
-        display : none ; 
-    }
-    .sub-category &--return{
+        cursor: pointer;
         height: 3em;    
     }
+
     &--category {
+        cursor: pointer;
         height: 3em;
     }
 }

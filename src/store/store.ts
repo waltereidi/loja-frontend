@@ -7,12 +7,21 @@ const storeController = new StoreController() ;
 const state :State={
   message : [] ,
   appConfig : storeController.getAppConfig() ,
+  navMenu : false ,  
 };
 
 const mutations = {
   test(state:State )
   {
     state.appConfig.authorization ='Bearer Token';
+  }, 
+  openMenu(state:State)
+  {
+    state.navMenu = true; 
+  },
+  closeMenu(state:State)
+  {
+    state.navMenu = false; 
   }
 };
 
@@ -20,6 +29,10 @@ const getters = {
   getAuthorization(state:State)
   {
     return state.appConfig.authorization;
+  },
+  getNavMenu(state:State)
+  {
+    return state.navMenu ; 
   }
 }
 

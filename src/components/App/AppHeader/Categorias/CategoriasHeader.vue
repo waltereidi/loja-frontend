@@ -1,4 +1,4 @@
-<script lang="ts">
+<script >
 import { ref } from "vue";
 
     export default { 
@@ -13,25 +13,25 @@ import { ref } from "vue";
                 categoryDataSource:{
                     type:Object
                 } , 
-                parentDataSource : {
-                    type:Object,
-                    default:null 
-                }, 
+                parentDataSource : {}, 
 
             }
         },
         methods:{
-            setCategory(parentDataSource:object  ,children:object ){
-                this.categoryDataSource = children;
-                this.parentDataSource = parentDataSource;
+            setCategory(datasource , children ){
+                if(children!==null)
+                {
+                    this.categoryDataSource = children;
+                    this.parentDataSource = datasource;
+                }
             },
             setMainMenu(){
                 this.parentDataSource = null ; 
                 this.categoryDataSource = this.datasource;
             },
             setPreviousMenu(){
-                this.categoryDataSource = this.parentDataSource;
-                this.parentDataSource=null ;
+                this.categoryDataSource = [this.parentDataSource];
+                this.parentDataSource= null ; 
             }
         },
         beforeMount(){
@@ -41,21 +41,21 @@ import { ref } from "vue";
 </script>
 
 <template>
-    {{ categoryDataSource }}
-        <div :class="'menu'+(parentDataSource?.category !== 'main' ? ' sub-category' : '' )+(parentDataSource===null?' main':'')">
+        <div class="menu">
             <div class="flex-column menu--login">
-                <i>icon</i> <p>Fazer login</p><span>X</span>
-            </div>
-            <div class="flex-column menu--information"> 
                 <i>icon</i> <p>Fazer login</p>
             </div>
+            <div class="flex-column menu--information"> 
+                <i>icon</i> <p>Conteudo Informacao</p>
+            </div>
             
-            <div class="flex-column menu--main-menu">
+            <div class="flex-column menu--main-menu" v-if="categoryDataSource[0]?.category !== 'main'">
                 <i @click="setMainMenu" >voltar</i> <p @click="setMainMenu">voltar para o menu principal</p><span>></span>
             </div>
 
-            <div class="flex-column menu--return" v-if="parentDataSource!==null">
-                <i @click="setPreviousMenu" >voltar</i> <p @click="setPreviousMenu">{{ 'Voltar a '+parentDataSource.parent  }}</p>
+            <div class="flex-column menu--return" v-if="parentDataSource!=null && parentDataSource.parent !=null">
+                <i @click="setPreviousMenu" >voltar</i> <p @click="setPreviousMenu">{{ 'Voltar a '+ parentDataSource.parent  }}</p>
+                {{ parentDataSource.parent }}
             </div>
             
             <div class="flex-column menu--category" v-for="(category ,index ) in categoryDataSource" :key="index"> 

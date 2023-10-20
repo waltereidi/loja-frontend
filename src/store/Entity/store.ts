@@ -15,4 +15,5 @@ export enum EnumMessageType {
  export interface State{
     message? : MessageInterface[] , 
     appConfig : StoreConfig ,
+    navMenu : boolean , 
   }

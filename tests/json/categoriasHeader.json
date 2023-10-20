@@ -31,11 +31,17 @@
                 "parent" : "da1" ,
                 "children" : [
                     {
-                    "name" : "da1_3" ,
-                    "category" :"produtos" , 
-                    "parent":"da1_2", 
-                    "children" : null
-                }
+                        "name" : "da1_3" ,
+                        "category" :"produtos" , 
+                        "parent":"da1_2", 
+                        "children" : null
+                    },
+                    {
+                        "name" : "da1_3_2" ,
+                        "category" :"produtos" , 
+                        "parent":"da1_2", 
+                        "children" : null
+                    }
             ]
             }
         ]
