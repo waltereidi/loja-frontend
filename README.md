@@ -1,5 +1,5 @@
 <h1> Projeto de loja : Parte Front end</h1>
-<h1> Em desenvolvimento </h1>
+<h1> Em desenvolvimento(faze de prototipação) </h1>
 
 <h2>Vuejs , VueRouter , Vuex , Pinia , Tailwind , Sass , Typescript </h2>
 <h4> Fase de prototipação : Modelo low fidelity handmade.</h4>
