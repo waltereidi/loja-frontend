@@ -1,5 +1,5 @@
 <script lang="ts">
-import CategoriasHeader from '../Categorias/CategoriasHeader.vue';
+import CategoryHeader from './Category/CategoryHeader.vue';
 
 const props = {
     datasource :{
@@ -15,14 +15,17 @@ export default{
     props  , 
     methods, 
     components:{
-        CategoriasHeader,
+        CategoryHeader,
     }
 }
 
 </script>
 
 <template>
-    <CategoriasHeader :datasource="datasource" v-if="this.$store.getNavMenu"></CategoriasHeader>
+    <CategoryHeader :datasource="datasource" v-if="this.$store.getNavMenu"></CategoryHeader>
     
 
 </template>
+<style lang="scss">
+    @import "./style.scss";
+</style>

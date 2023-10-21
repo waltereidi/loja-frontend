@@ -1,4 +1,3 @@
-import { CategoriaStoreController } from "@/store/Controllers/categoriaStoreController";
+import { CategoryStoreController } from "@/store/Controllers/categoryStoreController";
 
-const categoriaStoreController =new CategoriaStoreController();
-const categoriasDataSource = require("../../json/categoriasHeader.json");
+const categoryStoreController =new CategoryStoreController();

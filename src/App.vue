@@ -1,7 +1,7 @@
 
 <script lang="ts">
 import AppFooter from "@/components/App/AppFooter/AppFooter.vue";
-import AppHeader from "./components/App/AppHeader/Menu/AppHeader.vue";
+import AppHeader from "./components/App/AppHeader/AppHeader.vue";
 
 //faze de testes 
 
@@ -9,7 +9,7 @@ import AppHeader from "./components/App/AppHeader/Menu/AppHeader.vue";
   export default { 
     data(){
       return {
-        categoriasHeaderDataSource : require("/tests/json/categoriasHeader.json") ,
+        categoryHeaderDataSource : require("/tests/json/categoryHeader.json") ,
       }
     },
     methods : {
@@ -21,11 +21,11 @@ import AppHeader from "./components/App/AppHeader/Menu/AppHeader.vue";
   }
 </script>
 <template>
-  <AppHeader :datasource="categoriasHeaderDataSource"> </AppHeader>
+  <AppHeader :datasource="categoryHeaderDataSource"> </AppHeader>
   <router-view/>
 <AppFooter></AppFooter>
 </template>
 
 <style lang="scss">
-
+ @import './index.scss';
 </style>
