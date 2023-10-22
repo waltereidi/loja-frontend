@@ -32,6 +32,9 @@ import { ref } from "vue";
             setPreviousMenu(){
                 this.categoryDataSource = [this.parentDataSource];
                 this.parentDataSource= null ; 
+            },
+            closeMenu(){
+                this.$store.commit('closeMenu');
             }
         },
         beforeMount(){
@@ -41,7 +44,9 @@ import { ref } from "vue";
 </script>
 
 <template>
+    <div class="lock-screen" @click="closeMenu"></div>
         <div class="menu">
+            <div class="menu--close-button"  @click="closeMenu">X</div>
             <div class="flex-column menu--login">
                 <i>icon</i> <p>Fazer login</p>
             </div>
@@ -63,14 +68,8 @@ import { ref } from "vue";
                 <p @click="setCategory(category , category.children)"> {{ category.name }} </p> 
                 <span> X </span>
             </div>
-
-
-            
-            
-            
             
         </div>
-
 </template>
 <style scoped lang="scss"> 
 @import "./style.scss";

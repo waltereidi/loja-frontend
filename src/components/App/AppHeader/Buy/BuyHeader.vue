@@ -1,11 +1,13 @@
 <script lang="ts">
+    export default {
 
+    }
 </script>
 
 <template>
     <div class="item office-hour">
         <div class="item--icon">
-            <i src="/public/img/icons/AppHeader/clock.svg"></i>
+            <img src="img/icons/AppHeader/clock.svg"/>
         </div>
         <div class="item--text">
             <p>Horários <br>
@@ -15,7 +17,7 @@
     
     <div class="item login">
         <div class="item--icon">
-            <i src="/public/img/icons/AppHeader/user.svg"></i>
+            <img src="img/icons/AppHeader/user.svg"/>
         </div>
         <div class="item--text">
             <p>Entre <span>ou</span><br>
@@ -26,7 +28,7 @@
 
     <div class="item buy-list">
         <div class="item--icon">
-            <i src="/public/img/icons/AppHeader/list.svg.svg"></i>
+            <img src="img/icons/AppHeader/list.svg"/>
         </div>
         <div class="item--text">
             <p>Lista de<br>compras</p>
@@ -35,7 +37,7 @@
 
     <div class="item cart">
         <div class="item--icon">
-            <i src="/public/img/icons/AppHeader/cart.svg"></i>
+            <img src="img/icons/AppHeader/cart.svg"/>
         </div>
         <div class="item--text">0</div>
     </div>
@@ -43,5 +45,5 @@
 </template>
 
 <style lang="scss">
-
+    @import './style.scss';
 </style>

@@ -30,7 +30,7 @@ const getters = {
   {
     return state.appConfig.authorization;
   },
-  getNavMenu(state:State)
+  getNavMenu(state:State) : boolean
   {
     return state.navMenu ; 
   }

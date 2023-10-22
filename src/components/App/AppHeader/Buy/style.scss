@@ -1,10 +1,9 @@
 @import 'src/variables';
 .item{
-    margin:0 1em 0 1em;
     flex-flow:row wrap ;
     font-size:0.6rem;
     height: 5rem;
-    width: 10rem;
+    max-width: 4rem;
     display: flex; 
     font-family: 'Montserrat';
     color: $theme;
@@ -13,6 +12,7 @@
     }
     &--text{
         flex: 0 0 3rem;
+        display: flex;
         p{
             font-weight: 700;
         }
