@@ -1,10 +1,20 @@
 <script>
 export default {
-
+    props:{
+        datasource : {
+            type: Object , 
+            required: true , 
+        },
+    }
 }
 </script>
 <template>
-    <h1>sd</h1>
+    
+    <div class="category">
+        <img :src="'/img/icons/Category/'+datasource.icon" />
+        <p>{{ datasource.name }}</p>
+    </div>
+
 </template>
 <style>
 </style>

@@ -26,8 +26,13 @@
         justify-content: space-around;
     }
 
-    &--categoryBar{
+    &--category-bar{
         flex: 0 0 100% ; 
+        display:flex ; 
+        flex-flow:row wrap;
+        &__category{
+            flex: 0 0 auto; 
+        }
     }
 
     @media (max-width:970px)
@@ -38,7 +43,9 @@
         &--logo{
             flex: 1 1 45%;
         }
-        
+        &--category-bar{
+            display:none ; 
+        }
     
         &--search{
             flex: 1 1 100%
