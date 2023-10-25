@@ -30,6 +30,7 @@
         flex: 0 0 100% ; 
         display:flex ; 
         flex-flow:row wrap;
+        justify-content: space-around;
         &__category{
             flex: 0 0 auto; 
         }

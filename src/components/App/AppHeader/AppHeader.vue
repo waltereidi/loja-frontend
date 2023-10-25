@@ -5,7 +5,7 @@ import LogoHeader from './Logo/LogoHeader.vue';
 import SearchHeader from './Search/SearchHeader.vue';
 import BuyHeader from './Buy/BuyHeader.vue';
 import CategoryBar from './CategoryBar/CategoryBar.vue';
-import { CategoryStoreController } from '/src/store/categoryStore.ts';
+import {categoryStore}  from '/src/store/categoryStore.ts';
 
 const props = {
     datasource :{
@@ -18,7 +18,7 @@ export default{
     props, 
     data(){
         return {
-            categoryStoreController : ref( CategoryStoreController ) ,
+            categoryStore : categoryStore()  ,
         }
     },
     methods:{
@@ -34,6 +34,9 @@ export default{
         LogoHeader,
         CategoryBar,
     },
+    mounted() {
+        this.categoryStore.setCategoryBar(this.datasource);
+    }
  
 }
 
@@ -48,9 +51,10 @@ export default{
         <div class="header--logo"><LogoHeader/></div>
         <div class="header--search"><SearchHeader/></div>
         <div class="header--buy"><BuyHeader/></div>
-        <div class="header--category-bar">
-
-            <CategoryBar :datasource="datasource"></CategoryBar>
+        <div class="header--category-bar" v-if="categoryStore.getCategoryBar.length > 0">
+            <div class="header--category-bar__category" v-for="(category , index) in  categoryStore.getCategoryBar" :key="index" >
+                <CategoryBar :datasource="category"></CategoryBar>
+            </div>
         </div>
 
     </div>
