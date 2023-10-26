@@ -5,6 +5,7 @@
     display: flex ; 
     flex-flow: column;
     
+    
     &--list-spacebetween{
         flex-flow: row wrap;
         display:flex ; 
@@ -57,14 +58,17 @@
         font-size:0.65em;
         padding: 1em 2em 3em 2em;
     }
-    &--bottom-centralized{
-        display:flex;
-        justify-content: center;
-        background-color: #004D40;
-        color: white;
-        font-size:0.65em;
-        padding: 1em 0 1em 0 ;
+    
 
-    }
+}
+.bottom-centralized{
+    display:flex;
+    justify-content: center;
+    background-color: #004D40;
+    color: white;
+    font-size:0.65em;
+    width: 100vw;
+    left:0;
+    padding: 1em 0 1em 0 ;
 
 }

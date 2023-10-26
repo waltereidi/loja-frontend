@@ -1,13 +1,20 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
+import AppBody from '@/components/App/AppBody/AppBody.vue';
+import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 
-const routes: Array<RouteRecordRaw> = [
-
- 
-]
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
+  routes: [
+     {
+       path: '/',
+       name: 'AppBody',
+       component: AppBody 
+     },
+     
+  ],
+  scrollBehavior(to, from, savedPosition) {
+      return {top:0}
+  }
 })
 
 export default router

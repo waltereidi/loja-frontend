@@ -39,16 +39,7 @@
         <div class="footer--line-centralized">
             <p>Linha adicional de informações</p>
         </div>
-        <div class="footer--bottom-centralized">
-            <p>Conjunto total de informações legais e acessibilidade...
-                <br>
-                <br>
-                <br>
-                <br>
-
-            </p>
-
-        </div>
+        
     </div>
 
 </template>

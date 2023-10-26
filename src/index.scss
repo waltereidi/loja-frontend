@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+body{
+    font-family: 'Montserrat';
+}
 
 @font-face {
     font-family: "Montserrat";
@@ -32,4 +34,10 @@
     font-family: "Montserrat";
     src: url("/public/fonts/Montserrat/static/Montserrat-SemiBold.ttf");
     font-weight: 600;
+}
+
+.app-container{
+    
+    width: 80vw;
+    margin:auto;
 }
