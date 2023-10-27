@@ -1,0 +1,36 @@
+.cadastro-container{
+    display:flex; 
+    flex-flow:column ;
+    justify-content: center;
+    text-align: center;
+    
+    &--title{
+        font-weight: 700;
+        font-size:2rem;
+
+    }
+    &--form{
+        &__input-group{
+            display:flex; 
+            flex-flow:row wrap ; 
+            label > input{
+                flex: 1 1 auto ;
+            }
+        }
+        &__input{
+           label > input{
+            flex: 1 1 auto ;
+           } 
+
+        }
+        &--check-group{
+            display: flex ;
+            flex-flow:row wrap ;
+            justify-content: flex-start;
+        }
+
+
+
+    }
+
+}
