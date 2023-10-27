@@ -3,7 +3,7 @@
 import AppFooter from "@/components/App/AppFooter/AppFooter.vue";
 import AppHeader from "./components/App/AppHeader/AppHeader.vue";
 import AppFooterBottom from "@/components/App/AppFooter/AppFooterBottom.vue";
-import AppBody from "@/components/App/AppBody/AppBody.vue";
+import AppBody from "@/views/AppBody/AppBody.vue";
 
 //faze de testes 
 

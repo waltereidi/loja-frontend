@@ -1,6 +1,6 @@
 <script lang="ts">
 import { categoryStore } from "@/store/categoryStore";
-import ProductCategory from "./ProductCategory/ProductCategory.vue";
+import ProductCategory from "@/components/ProductCategory/ProductCategory.vue";
 
 export default {    
     components:{

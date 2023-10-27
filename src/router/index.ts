@@ -1,4 +1,4 @@
-import AppBody from '@/components/App/AppBody/AppBody.vue';
+import AppBody from '@/views/AppBody/AppBody.vue';
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 
 
