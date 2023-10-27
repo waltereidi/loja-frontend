@@ -14,6 +14,10 @@ export const categoryStore = defineStore('category' , {
         getCategoryBar(state)
         {
             return state.categoryArray;
+        }, 
+        getProductCategoryDataSource()
+        {
+            return require('../../tests/json/productCategory.json');
         }
     },
     actions:{

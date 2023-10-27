@@ -1,18 +1,24 @@
 <script lang="ts">
+import { categoryStore } from "@/store/categoryStore";
 import ProductCategory from "./ProductCategory/ProductCategory.vue";
 
-export default {
+export default {    
     components:{
         ProductCategory, 
+    },
+    data(){
+        return {
+            categoryStore : categoryStore() ,
+        }
     }
 }
 </script>
 
 <template>
     <div class="app-body">
-        
-            <ProductCategory></ProductCategory>
-        
+            <div class="productCategory" v-for="(productCategory , index ) in categoryStore.getProductCategoryDataSource" :key="index">
+                <ProductCategory :datasource="productCategory"></ProductCategory>
+            </div>
     </div>
 
 </template>

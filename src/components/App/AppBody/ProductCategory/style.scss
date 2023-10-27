@@ -1,7 +1,15 @@
 .title{
-    
+    font-weight: 700;
+    font-size:2rem;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    img{
+        height: 10px;
+        width: 10px;
+    }
 }
-.product-container{
+.products{
     flex: 1 1 auto;
     display:flex;
     flex-flow:row wrap ; 

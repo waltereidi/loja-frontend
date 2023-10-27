@@ -3,13 +3,16 @@
 import AppFooter from "@/components/App/AppFooter/AppFooter.vue";
 import AppHeader from "./components/App/AppHeader/AppHeader.vue";
 import AppFooterBottom from "@/components/App/AppFooter/AppFooterBottom.vue";
-//faze de testes 
 import AppBody from "@/components/App/AppBody/AppBody.vue";
+
+//faze de testes 
+
 
   export default { 
     data(){
       return {
         categoryHeaderDataSource : require("/tests/json/categoryHeader.json") ,
+        productCategory : require("/tests/json/productCategory.json"), 
       }
     },
     methods : {
