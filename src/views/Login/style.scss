@@ -9,6 +9,8 @@
         align-self: center;
     }
     &--form{
+        min-width: 30em;
+        max-width: 30vw;
         flex-flow:column;
         display:flex; 
         align-self: center;
@@ -17,7 +19,6 @@
             margin: 1rem 0 1rem 0;
         }
         &__submit{
-            align-self:center;
             
         }
 

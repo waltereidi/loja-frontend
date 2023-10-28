@@ -15,26 +15,24 @@
         </div>
     </div>
     
-    <a href="/Login">
+    
         <div class="item login">
             <div class="item--icon">
                 <img src="img/icons/AppHeader/user.svg"/>
             </div>
             <div class="item--text">
-                    <p>Entre <span>ou</span><br>
-                    Cadastre-se
-                    </p>
-                
+                <a href="/Login"><p>Entre</p></a> 
+                <span>ou</span><br>
+                <a href="/Register"><p>Cadastre-se</p></a>
             </div>
         </div>
-    </a>
     
     <div class="item buy-list">
         <div class="item--icon">
             <img src="img/icons/AppHeader/list.svg"/>
         </div>
         <div class="item--text">
-            <p>Lista de<br>compras</p>
+            <a href="/BuyList"><p>Lista de<br>compras</p></a>
         </div>
     </div>
 
